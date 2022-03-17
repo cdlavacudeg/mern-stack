@@ -38,12 +38,12 @@ export default class RestaurantsDAO{
             return {restaurantsList:[], totalNumRestaurants:0};
         }
 
-        const displayCursor=cursor.limit(restaurantsPerpage).skip(restaurantsPerPage*page);
+        const displayCursor=cursor.limit(restaurantsPerPage).skip(restaurantsPerPage*page);
 
         try {
-            const restauranstList = await displayCursor.toArray();
+            const restaurantsList = await displayCursor.toArray();
             const totalNumRestaurants = await restaurants.countDocuments(query);
-            return {restauranstList,totalNumRestaurants};
+            return {restaurantsList,totalNumRestaurants};
         } catch (error) {
             console.error(
                 `Unable to convert cursor to array or problem counting documents, ${error}`

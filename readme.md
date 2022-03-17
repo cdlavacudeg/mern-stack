@@ -56,3 +56,11 @@ Data from conection with cluster of MongoDBAtlas:
 `nodemon server`
 
 dao: data access object
+
+## Set name filter on MongoDB Atlas
+- create a new index(field option):
+```json
+{
+  "name": "text",
+}
+```
