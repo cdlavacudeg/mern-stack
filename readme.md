@@ -64,3 +64,35 @@ dao: data access object
   "name": "text",
 }
 ```
+
+## Test review
+Postman post JSON:
+- Add (Post):
+    ```json
+    {
+        "restaurant_id":"5eb3d668b31de5d588f4292a",
+        "text": "Great Food!",
+        "user_id":"1234",
+        "name":"Cristian"
+    }
+    ```
+
+- Update(Put):
+
+    ```json
+    {
+        "review_id":"62338e3a73de9c75076cd130",
+        "text": "Update Test Food!",
+        "user_id":"1234",
+        "name":"Cristian"
+    }
+    ```
+
+- Delete:
+`http://localhost:5000/api/v1/restaurants/review?id=62338e3a73de9c75076cd130`
+```json
+{
+    "user_id":"1234"
+}
+
+```
