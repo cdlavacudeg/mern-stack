@@ -45,3 +45,10 @@ Example of a mongoDB document model (JSON, binary JSON):
     - mongodb:Interact with the mongo db database
     - dotenv: Envioremental variables, serves on a file
 - install nodemon:`npm install -g nodemon`,development node.js aplications
+
+## .env
+Data from conection with cluster of MongoDBAtlas:
+`mongodb+srv://cdlavacudeg:<password>@cluster0.4zumk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+
+## Test Backend
+`nodemon server`
