@@ -50,5 +50,9 @@ Example of a mongoDB document model (JSON, binary JSON):
 Data from conection with cluster of MongoDBAtlas:
 `mongodb+srv://cdlavacudeg:<password>@cluster0.4zumk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
+[Process .env](https://codeburst.io/process-env-what-it-is-and-why-when-how-to-use-it-effectively-505d0b2831e7)
+
 ## Test Backend
 `nodemon server`
+
+dao: data access object
