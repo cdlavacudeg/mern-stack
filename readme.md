@@ -18,17 +18,17 @@ Also, learn how to use MongoDB Realm to convert the backend to serverless and ho
 Example of a mongoDB document model (JSON, binary JSON):
 ```json
 {
-      name : "Beau Carnes",
-      title : "Developer & Teacher",
-      address : {
-            address 1: "123 Main Street"
-            city : "Grand Rapids",
-            state : "Michigan",
-            postal_code : “49503"
+      name: "Beau Carnes",
+      title: "Developer & Teacher",
+      address: {
+            address1: "123 Main Street"
+            city: "Grand Rapids",
+            state: "Michigan",
+            postal_code: "49503",
         },
-      topics : [ "Python", "JavaScript",“Robots"],
+      topics : [ "Python", "JavaScript","Robots"],
       employee_number : 1234,
-      location : [44.9901, 123.0262]
+      location : [44.9901, 123.0262],
 }
 ```
 ### Setting Up MongoDB Atlas
@@ -36,8 +36,13 @@ Example of a mongoDB document model (JSON, binary JSON):
 - Conect to MongoDB Atlas
 - Create a Cluster
 - Load Sample data
+### MongoDB Links:
+- [MongoDB Basics](https://university.mongodb.com/courses/M001/about?utm_campaign=new_students&utm_source=partner&utm_medium=referral)
+- [MongoDB for JavaScript Developers](https://university.mongodb.com/courses/M220JS/about?utm_campaign=new_students&utm_source=partner&utm_medium=referral)
+- [Query Operators](https://docs.mongodb.com/manual/reference/operator/)
+- [MongoDB security best practices](https://www.mongodb.com/security-best-practices)
 
-## Create Node/Expres Bakend
+## Create Node/Expres Backend
 - create backend directory and init `npm init -y`
 - intall dependecies: `npm install express cors mongodb dotenv`
     - express: Web server
