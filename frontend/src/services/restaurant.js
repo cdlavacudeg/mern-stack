@@ -1,6 +1,6 @@
-import http from '../http-common';
+import http from '../http-common.js';
 
-export default class RestauranDataService{
+class RestaurantDataService{
     getAll(page=0){
         return http.get(`?page=${page}`);
     }
@@ -29,3 +29,5 @@ export default class RestauranDataService{
         return http.get(`/cuisines`);
     }
 }
+
+export default new RestaurantDataService();

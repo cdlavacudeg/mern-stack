@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router,Routes,Route,Link, useParams} from 'react-router-dom';
+import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import AddReview from './components/add-reviews';
