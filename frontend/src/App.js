@@ -50,7 +50,9 @@ function App() {
           <Route exact path={"restaurants"} element={<RestaurantsList/>}/>
           <Route exact path={""} element={<RestaurantsList/>}/>
 
-          <Route path="restaurant/:id/review" element={ <AddReview user={user}/> }/>
+          <Route path="restaurants/:id/review" element={ <AddReview user={user}/> }/>
+          <Route path="restaurants/:id" element={<Restaurant user={user}/>}/>
+          <Route path="login" element={<Login user={user}/>}/>
   
             
         </Routes>

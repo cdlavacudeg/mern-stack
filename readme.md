@@ -106,3 +106,6 @@ Postman post JSON:
 `npx create-react-app frontend`
 `npm install bootstrap`
 `npm install react-router-dom`
+
+## conect backend
+`npm install axios`
