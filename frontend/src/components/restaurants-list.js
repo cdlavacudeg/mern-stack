@@ -17,6 +17,7 @@ const RestaurantsList=(props)=> {
   const retrieveRestaurants=()=>{
     RestaurantDataService.getAll()
       .then(response=>{
+        console.log(response.data.restaurants);
         setRestaurants(response.data.restaurants);
       })
       .catch(e=>console.log(e));

@@ -8,7 +8,7 @@ import RestaurantsList from './components/restaurants-list';
 import Login from './components/login';
 
 function App() {
-  const [user,setUser]=React.useState(null);
+  const [user,setUser]=React.useState({id:"12346"});
   async function login(user=null){
     setUser(user);
   }
