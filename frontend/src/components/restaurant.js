@@ -31,12 +31,20 @@ export default function Restaurant({user}) {
   };
 
   const deleteReview = (reviewId, index) => {
+    
     RestaurantDataService.deleteReview(reviewId,user.id)
       .then(response => {
         setRestaurant((prevState) => {
-          prevState.reviews.splice(index, 1);
+          console.log('Deel')
+          console.log(prevState)
+          console.log(index)
+          //prevState.reviews.splice(index, 1);
+          let reviewsCopy=prevState.reviews.slice(0);
+          reviewsCopy.splice(index,1)
+          console.log(reviewsCopy)
           return({
-            ...prevState
+            ...prevState,
+            reviews: reviewsCopy
           })
         })
       })
