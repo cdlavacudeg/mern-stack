@@ -8,7 +8,7 @@ import RestaurantsList from './components/restaurants-list';
 import Login from './components/login';
 
 function App() {
-  const [user,setUser]=React.useState({id:"12346"});
+  const [user,setUser]=React.useState(null);
   async function login(user=null){
     setUser(user);
   }
@@ -52,7 +52,7 @@ function App() {
 
           <Route path="restaurants/:id/review" element={ <AddReview user={user}/> }/>
           <Route path="restaurants/:id" element={<Restaurant user={user}/>}/>
-          <Route path="login" element={<Login user={user}/>}/>
+          <Route path="login" element={<Login user={user} setUser={setUser} login={login}/>}/>
   
             
         </Routes>
